@@ -1,0 +1,102 @@
+.input-container {
+  margin-bottom: 26px;
+
+  input {
+    @include typography("medium", 14px);
+    border: 1px solid $color-gray-4;
+    transition: all ease 0.3s;
+    color: $color-gray-5;
+    border-radius: 7px;
+    padding: 0 21px;
+    outline: none;
+    height: 48px;
+    width: 100%;
+
+    &:focus {
+      border-color: $color-primary;
+      color: $color-terciary;
+    }
+
+    &:disabled,
+    &[disabled],
+    &.disabled {
+      border-color: $color-gray-2;
+      color: $color-gray-3;
+      cursor: not-allowed;
+    }
+  }
+
+  &--danger {
+    input {
+      border-color: $color-negative;
+      color: $color-negative;
+    }
+
+    span {
+      @include typography("medium", 14px);
+      color: $color-negative;
+      align-items: center;
+      margin-top: 8px;
+      display: flex;
+
+      mat-icon {
+        margin-right: 7.5px;
+      }
+    }
+  }
+}
+
+.input-material {
+  @include custom-form-fiield;
+}
+.mandatory {
+  color: $color-negative;
+}
+.input {
+  &--password {
+    &__container {
+      border: 1px solid $color-gray-4;
+      transition: all ease 0.3s;
+      color: $color-gray-5;
+      border-radius: 7px;
+      padding: 0 21px;
+      outline: none;
+      height: 48px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      input {
+        @include typography("medium", 14px);
+
+        width: 100%;
+        outline: none;
+        border: 0;
+      }
+      &:focus {
+        border-color: $color-primary;
+        color: $color-terciary;
+      }
+
+      &:disabled,
+      &[disabled],
+      &.disabled {
+        border-color: $color-gray-2;
+        color: $color-gray-3;
+        cursor: not-allowed;
+      }
+      &-danger {
+        color: $color-negative;
+        border: 1px solid $color-negative;
+
+        input {
+          border-color: $color-negative;
+          color: $color-negative;
+        }
+      }
+    }
+    &__button {
+      cursor: pointer;
+    }
+  }
+}

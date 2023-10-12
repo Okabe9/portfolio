@@ -1,0 +1,33 @@
+.tabsheet {
+  position: relative;
+
+  .mat-tab-label {
+    @include typography("regular", 18px);
+    border-bottom: 4px solid $color-gray-2;
+    transition: all ease 0.3s;
+    justify-content: center;
+    flex-direction: column;
+    color: $color-gray-3;
+    max-width: 167.5px;
+    padding: 9.5px 0;
+    display: flex;
+    height: 45px;
+    width: 100%;
+    opacity: 1;
+
+    &-active {
+      @include typography("bold", 18px);
+      border-color: $color-primary;
+      color: $color-primary;
+    }
+  }
+
+  > .button-wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    z-index: 2;
+    right: 0;
+  }
+}

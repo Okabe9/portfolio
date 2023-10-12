@@ -1,0 +1,51 @@
+
+.title {
+    &-lg {
+        @include typography('bold', 42px);
+        color: $color-terciary;
+        margin-bottom: 34px;
+    }
+
+    &-md {
+        @include typography('bold', 24px);
+        color: $color-terciary;
+    }
+    &-success{
+      color: $color-positive; 
+    }
+    &-error{
+      color: $color-negative; 
+    }
+}
+
+.text {
+    &-bold {
+        @include font-family('bold');
+    }
+}
+
+.color {
+    &-primary {
+        color: $color-primary;
+    }
+
+    &-secondary {
+        color: $color-secondary;
+    }
+
+    &-terciary {
+        color: $color-terciary;
+    }
+
+    &-white {
+        color: white;
+    }
+
+    &-danger {
+        color: $color-negative;
+    }
+
+    &-success {
+        color: $color-positive;
+    }
+}

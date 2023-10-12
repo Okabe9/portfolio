@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "gamedev-portfolio-6d6c4": {
+      "hosting": {
+        "gamedev-portfolio": [
+          "gamedev-portfolio-6d6c4"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "gamedev-portfolio-6d6c4"
+  }
+}

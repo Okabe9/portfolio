@@ -1,0 +1,73 @@
+
+@mixin font-family($font) {
+    @if $font == "regular" {
+        font-family: "HelveticaNeueRoman";
+    } @else if $font == "medium" {
+        font-family: "HelveticaNeueMedium";
+    } @else if $font == "bold" {
+        font-family: "HelveticaNeueBold";
+    }
+    font-weight: normal;
+    font-display: swap;
+    font-style: normal;
+}
+
+// Allowed font size 11px, 14px, 16px, 18px and 24px
+@mixin typography($font: 'regular', $size: 14px) {
+    @include font-family($font);
+    line-height: normal;
+    font-size: $size;
+}
+
+@mixin custom-form-fiield {
+    .mat-form-field-wrapper {
+        height: 48px;
+    }
+
+    .mat-form-field-flex {
+        padding: 0 16px !important;
+        align-items: center;
+        display: flex;
+        height: 100%;
+    }
+    
+    .mat-form-field-outline {
+        border-color: $color-gray-2 !important;
+        background-color: white;
+        top: 0 !important;
+    }
+
+    .mat-form-field-prefix {
+        margin-right: 5px;
+        top: 0 !important;
+        margin-left: 5px;
+    }
+
+    .mat-form-field-outline-gap {
+        display: none !important;
+    }
+
+    .mat-form-field-outline-start,
+    .mat-form-field-outline-gap,
+    .mat-form-field-outline-end {
+        border-color: $color-gray-2 !important;
+    }
+}
+
+@mixin button-link {
+    background-color: transparent;
+    border-color: transparent;
+    color: $color-primary;
+
+    &:hover {
+        color: $color-terciary;
+    }
+
+    &:disabled,
+    &.disabled,
+    &[disabled] {
+        color: $color-primary !important;
+        cursor: not-allowed;
+        opacity: 0.75;
+    }
+}

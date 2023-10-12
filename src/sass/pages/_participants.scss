@@ -1,0 +1,15 @@
+.participants {
+    &__input {
+        max-width: 230px;
+    }
+
+    &__select {
+        max-width: 122px;
+    }
+
+    &__checkbox {
+        margin-left: auto !important;
+        align-items: center;
+        display: flex;
+    }
+}

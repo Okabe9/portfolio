@@ -1,0 +1,74 @@
+.cdk-overlay-container, .cdk-global-overlay-wrapper {
+    pointer-events: none;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.cdk-global-overlay-wrapper {
+    position: absolute;
+    display: flex;
+    z-index: 1000;
+}
+
+.cdk-overlay-container {
+    position: fixed;
+    z-index: 1000;
+}
+
+.cdk-overlay-transparent-backdrop.cdk-overlay-backdrop-showing {
+    visibility: visible;
+    opacity: 0;
+}
+
+.cdk-overlay-backdrop.cdk-overlay-backdrop-showing {
+    opacity: 1;
+}
+
+.cdk-overlay-transparent-backdrop {
+    transition: visibility 1ms linear,opacity 1ms linear;
+    visibility: hidden;
+    opacity: 1;
+}
+
+.cdk-overlay-backdrop {
+    transition: opacity .4s cubic-bezier(.25,.8,.25,1);
+    -webkit-tap-highlight-color: transparent;
+    pointer-events: auto;
+    position: absolute;
+    z-index: 1000;
+    opacity: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+.cdk-overlay-pane {
+    transform: translateX(-25px) !important;
+    box-sizing: border-box;
+    pointer-events: auto;
+    position: absolute;
+    max-height: 100%;
+    max-width: 100%;
+    z-index: 1000;
+    display: flex;
+}
+
+.cdk-overlay-backdrop.cdk-overlay-backdrop-showing {
+    opacity: 1;
+}
+
+.cdk-overlay-dark-backdrop {
+    background: rgba(0,0,0,.32);
+}
+
+.cdk-overlay-connected-position-bounding-box {
+    flex-direction: column;
+    position: absolute;
+    min-height: 1px;
+    min-width: 1px;
+    display: flex;
+    z-index: 1000;
+}

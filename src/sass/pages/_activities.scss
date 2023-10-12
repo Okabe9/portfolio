@@ -1,0 +1,25 @@
+.activities{
+    #filter {
+      &-search {
+          max-width: 350px;
+      }
+      
+      &-topic,
+      &-subtopic,
+      &-locations {
+          max-width: 260px;
+      }
+
+      &-day {
+          max-width: 140px;
+      }
+
+      &-error {
+          max-width: 100px;
+      }
+  }
+  .day-th{
+    width: 120px
+  }
+}
+

@@ -1,0 +1,21 @@
+.mat-checkbox {
+    label {
+        padding-top: 0.75rem;
+    }
+
+    input {
+        display: none;
+    }
+
+    svg {
+        filter: invert(90%);
+    }
+
+    &-frame {
+        border-width: 1px !important;
+    }
+}
+
+.table th .mat-checkbox svg {
+    filter: none;
+}

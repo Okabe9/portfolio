@@ -1,0 +1,31 @@
+.badge {
+    @include typography('medium', 16px);
+    background-color: $color-secondary;
+    color: $color-terciary;
+    border-radius: 10px;
+    padding: 7px 12px;
+    min-width: 30px;
+
+    &--success {
+        border: 1px solid $color-positive;
+        background-color: transparent;
+        color: $color-positive;
+    }
+
+    &--danger {
+        border: 1px solid $color-negative;
+        background-color: transparent;
+        color: $color-negative;
+    }
+
+    &--warning {
+        border: 1px solid $color-caution;
+        background-color: transparent;
+    }
+
+    &--sm {
+        @include typography('regular', 13px);
+        border-radius: 5px;
+        padding: 6px;
+    }
+}
