@@ -9,9 +9,20 @@ import { provideAuth, getAuth } from '@angular/fire/auth';
 import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 import { provideStorage, getStorage } from '@angular/fire/storage';
 import { HeaderComponent } from './components/header/header.component';
+import { AboutmeComponent } from './pages/aboutme/aboutme.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { DevlogComponent } from './pages/devlog/devlog.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    AboutmeComponent,
+    ProjectsComponent,
+    DevlogComponent,
+    ContactComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

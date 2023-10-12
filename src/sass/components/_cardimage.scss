@@ -1,0 +1,22 @@
+.cardimage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  &__text {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    &--title {
+      color: white;
+      font-weight: 700;
+    }
+    &--description {
+      color: white;
+    }
+  }
+  &__image {
+    height: 250px;
+    width: 250px;
+  }
+}

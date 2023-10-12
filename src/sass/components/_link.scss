@@ -1,13 +1,13 @@
 a {
-    @include typography('medium', 14px);
-    border-bottom: 1px solid transparent;
-    transition: all ease 0.3s;
-    text-decoration: none;
-    color: $color-primary;
-    padding-bottom: 1px;
+  @include typography("medium", 14px);
+  border-bottom: 1px solid transparent;
+  transition: all ease 0.3s;
+  text-decoration: none;
+  color: $color-white;
+  padding-bottom: 1px;
 
-    &:hover {
-        border-color: $color-primary;
-        color: $color-primary;
-    }
+  &:hover {
+    border-bottom: solid $color-accent 1px;
+    color: $color-secondary;
+  }
 }

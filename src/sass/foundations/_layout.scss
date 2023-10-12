@@ -1,40 +1,42 @@
 .layout {
-    background-color: $color-layout;
-    display: flex;
+  background-color: $color-layout;
+  display: flex;
+  width: 100%;
+
+  &__wrapper {
     width: 100%;
-    
+  }
+
+  &__header {
+    background-color: white;
+    justify-content: center;
+    position: relative;
+    display: flex;
+  }
+
+  &__content {
+    height: calc(100vh - 56px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+
     &__wrapper {
+      justify-content: center;
+      flex-direction: column;
+      max-width: 1217px;
+      margin: 0 auto;
+      display: flex;
+      width: 100%;
+
+      > .ng-star-inserted {
         width: 100%;
+      }
     }
-    
-    &__header {
-        background-color: white;
-        justify-content: center;
-        position: relative;
-        display: flex;
-    }
-
-    &__content {
-        height: calc(100vh - 56px);
-        overflow: auto;
-        width: 100%;
-
-        &__wrapper {
-            justify-content: center;
-            padding: 65px 32px 20px;
-            flex-direction: column;
-            max-width: 1217px;
-            margin: 0 auto;
-            display: flex;
-            width: 100%;
-
-            > .ng-star-inserted {
-                width: 100%;
-            }
-        }
-    }
+  }
 }
 
 body {
-    overflow: hidden;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
 }

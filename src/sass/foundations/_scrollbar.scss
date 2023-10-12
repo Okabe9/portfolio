@@ -4,8 +4,8 @@
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: $color-terciary;
-    border: 3px solid $color-white;
+    background-color: $color-accent;
+    border: 3px solid $color-layout;
     border-radius: 8px;
     margin: 5px;
   }
